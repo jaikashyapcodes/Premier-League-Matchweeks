@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom classes this makes the code cleaner :D */
+@layer components {
+  .app-container {
+    @apply min-h-screen bg-white text-black dark:bg-neutral-900 dark:text-white;
+  }
+
+  .page-wrapper {
+    @apply max-w-3xl mx-auto;
+  }
+
+  .header {
+    @apply flex items-center justify-between px-4 py-3;
+  }
+
+  .controls {
+    @apply flex flex-wrap gap-3 px-3 py-2;
+  }
+
+  .match-list {
+    @apply border-t border-neutral-300 dark:border-neutral-700;
+  }
+
+  .match-row {
+    @apply flex items-center justify-between px-3 py-2 border-b border-neutral-300 dark:border-neutral-700 text-sm;
+  }
+
+  .time {
+    @apply w-16 text-neutral-500;
+  }
+
+  .teams {
+    @apply flex items-center justify-between flex-1;
+  }
+
+  .home-team {
+    @apply flex-1 pr-2 text-right;
+  }
+
+  .away-team {
+    @apply flex-1 pl-2 text-left;
+  }
+
+  .score {
+    @apply font-semibold px-2;
+  }
+
+  .goals {
+    @apply w-12 text-right text-xs text-neutral-400;
+  }
+
+  .input {
+    @apply px-2 py-1 border rounded;
+  }
+
+  .button {
+    @apply px-3 py-1 border rounded;
+  }
+}
